@@ -1,13 +1,62 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-website</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tên Của Bạn — Giới thiệu</title>
+  <style>
+    :root{--bg:#0b1120;--card:#111a2e;--accent:#38bdf8;--text:#e2e8f0;--muted:#94a3b8}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(1200px 800px at 70% -10%,#1e293b,var(--bg));color:var(--text);line-height:1.6;min-height:100vh}
+    .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+    header{padding:80px 0 48px;text-align:center}
+    .avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 24px;background:linear-gradient(135deg,var(--accent),#818cf8);display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;color:#0b1120}
+    h1{font-size:2.4rem;margin-bottom:8px}
+    h1 .accent{color:var(--accent)}
+    .tagline{color:var(--muted);font-size:1.1rem}
+    section{margin-bottom:40px}
+    h2{font-size:1.3rem;margin-bottom:16px}
+    p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid #1e293b;border-radius:12px;padding:20px}
+    .card h3{font-size:1rem;margin-bottom:6px;color:var(--text)}
+    .card p{font-size:.9rem}
+    .contact{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;transition:transform .15s,background .2s}
+    .btn-primary{background:var(--accent);color:#0b1120}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-ghost{border:1px solid #334155;color:var(--text)}
+    .btn-ghost:hover{background:#1e293b}
+    footer{text-align:center;padding:40px 0;color:var(--muted);font-size:.85rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">ND</div>
+      <h1>Xin chào, tôi là <span class="accent">Tên Của Bạn</span></h1>
+      <p class="tagline">Một dòng giới thiệu ngắn — ví dụ: Lập trình viên / Nhà thiết kế</p>
+    </header>
+    <section>
+      <h2>Giới thiệu</h2>
+      <p>Viết vài câu giới thiệu về bản thân ở đây: bạn là ai, bạn làm gì, và điều khiến bạn hứng thú. Phần này bạn có thể bảo tôi đổi lại bất cứ lúc nào.</p>
+    </section>
+    <section>
+      <h2>Tôi làm gì</h2>
+      <div class="cards">
+        <div class="card"><h3>Mục 1</h3><p>Mô tả ngắn về kỹ năng hoặc dịch vụ thứ nhất.</p></div>
+        <div class="card"><h3>Mục 2</h3><p>Mô tả ngắn về kỹ năng hoặc dịch vụ thứ hai.</p></div>
+        <div class="card"><h3>Mục 3</h3><p>Mô tả ngắn về kỹ năng hoặc dịch vụ thứ ba.</p></div>
+      </div>
+    </section>
+    <section>
+      <h2>Liên hệ</h2>
+      <div class="contact">
+        <a class="btn btn-primary" href="mailto:email@cuaban.com">Gửi email</a>
+        <a class="btn btn-ghost" href="https://github.com/nduong2312" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+    <footer>© 2026 Tên Của Bạn · Tạo bằng Cloudflare</footer>
+  </div>
+</body>
 </html>
